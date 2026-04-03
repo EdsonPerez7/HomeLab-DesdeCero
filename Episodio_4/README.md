@@ -66,17 +66,6 @@ version: "3.8"
 
 services:
 
-  jellyfin:
-    image: jellyfin/jellyfin:latest
-    container_name: jellyfin
-    restart: unless-stopped
-    ports:
-      - "8096:8096"
-    volumes:
-      - /DATA/AppData/jellyfin:/config
-      - /DATA/Media/Movies:/data/peliculas
-      - /DATA/Media/TV Shows:/data/series
-
   jellyseerr:
     image: fallenbagel/jellyseerr:latest
     container_name: jellyseerr
@@ -96,7 +85,7 @@ services:
       - "8989:8989"
     volumes:
       - /DATA/AppData/sonarr:/config
-      - /DATA/Media/TV Shows:/series
+      - "/DATA/Media/TV Shows:/series"
       - /DATA/Downloads:/downloads
     environment:
       - TZ=America/Lima
@@ -130,7 +119,7 @@ services:
     container_name: qbittorrent
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8082:8082"
       - "6881:6881"
       - "6881:6881/udp"
     volumes:
@@ -138,7 +127,20 @@ services:
       - /DATA/Downloads:/downloads
     environment:
       - TZ=America/Lima
-      - WEBUI_PORT=8080
+      - WEBUI_PORT=8082
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    restart: unless-stopped
+    ports:
+      - "6767:6767"
+    volumes:
+      - /DATA/AppData/bazarr:/config
+      - /DATA/Media/Movies:/movies
+      - "/DATA/Media/TV Shows:/tv"
+    environment:
+      - TZ=America/Lima
 ```
 
 > ⚠️ Si tu zona horaria no es Lima, cámbiala. Puedes buscar la tuya [aquí](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones).
