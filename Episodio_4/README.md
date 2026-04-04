@@ -194,7 +194,7 @@ Deberías ver 6 servicios con estado `running`. 🟢
 1. Ve a **Settings → General** y copia tu **API Key**
 2. Ve a **Settings → Media Management → Add Root Folder** → agrega `/movies`
 3. Ve a **Settings → Download Clients → Add → qBittorrent**:
-   - Host: `qbittorrent` · Puerto: `8080`
+   - Host: `qbittorrent` · Puerto: `8082`
    - Usuario y contraseña de qBittorrent
 4. En Prowlarr → **Settings → Apps → Add → Radarr** → pega la API Key
 
