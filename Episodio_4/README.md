@@ -169,7 +169,7 @@ Deberías ver 6 servicios con estado `running`. 🟢
 > Reemplaza `TU-IP` con la IP de tu servidor en tu red (ej: `192.168.1.114`).  
 > Si no la sabes: `ip addr show | grep inet`
 
-### qBittorrent — `http://TU-IP:8080`
+### qBittorrent — `http://TU-IP:8082`
 
 1. Obtén la contraseña temporal de los logs:
    ```bash
@@ -208,7 +208,7 @@ Igual que Radarr pero:
 
 ---
 
-### Jellyfin — `http://TU-IP:8096`
+### Jellyfin — `http://TU-IP:8097`
 
 1. Sigue el asistente y crea tu usuario administrador
 2. Agrega tus bibliotecas:
