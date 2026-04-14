@@ -28,6 +28,13 @@ A continuación, puedes acceder a los comandos y archivos específicos de cada e
 * Configuración de IP Estática (Netplan).
 * Instalación de CasaOS.
 
+### [Episodio 4: Netflix Casero]
+* Qué es docker compose
+* Levantar multiples servicios en nuestro servidor
+* Configuración e instalación del stack arr
+* Automatizar Peticiones
+* Instalar Tailscale
+
 ---
 
 ## 🛠️ Tecnologías y Herramientas Utilizadas
