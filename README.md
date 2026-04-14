@@ -28,7 +28,7 @@ A continuación, puedes acceder a los comandos y archivos específicos de cada e
 * Configuración de IP Estática (Netplan).
 * Instalación de CasaOS.
 
-### [Episodio 4: Netflix Casero]
+### [Episodio 4: Netflix Casero](https://github.com/EdsonPerez7/HomeLab-DesdeCero/tree/main/Episodio_4)
 * Qué es docker compose
 * Levantar multiples servicios en nuestro servidor
 * Configuración e instalación del stack arr
